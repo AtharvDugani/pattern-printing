@@ -1,35 +1,17 @@
 n = 5
-
-# Upper half of butterfly
-for i in range(1, n + 1):
-
-    # Left stars
+for i in range(n):
     for j in range(i):
-        print("*", end=" ")
-
-    # To Print Middle spaces
-    for j in range(2 * (n - i)):
-        print(" ", end=" ")
-
-    # Right stars
-    for j in range(i):
-        print("*", end=" ")
-
+        print("*",end=" ")
+    for k in range((n-i)*2):
+        print(" ",end=" ")
+    for l in range(i):
+        print("*",end=" ")
     print()
-
-# # Lower half of butterfly
-for i in range(n, 0, -1):
-
-    # Left stars
-    for j in range(i):
-        print("*", end=" ")
-
-    # Middle spaces
-    for j in range(2 * (n - i)):
+for i in range(n):
+    for j in range(n - i):
+        print("*",end=" ")
+    for k in range(2 * i):
         print(" ", end=" ")
-
-    # Right stars
-    for j in range(i):
-        print("*", end=" ")
-
+    for l in range(n - i):
+        print("*",end=" ")
     print()
