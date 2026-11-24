@@ -1,10 +1,8 @@
-n = 6
-for i in range(6):
-    # first print the spaces
+n = 5
+# outer loop for rows
+for i in range(1, n+1):
     for j in range(n-i):
-        print(" ", end=" ")
-
-    # now print the * 
-    for _ in range(2*i-1):
-        print("*", end=" ")
+        print(" ",end=" ")
+    for k in range(2*i-1):
+        print("*",end=" ")
     print()
